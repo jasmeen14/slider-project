@@ -2,7 +2,7 @@
     border: 5px solid var(--clr-primary-5);
     width: 80vw;
     margin: 0 auto;
-    height: 40vh;
+    height: 100vh;
     max-width: 80rem;
     position: relative;
     border-radius: 0.5rem;
@@ -35,12 +35,28 @@
     transform: translate(-50%,-50%);
 }
 .slide:nth-child(3){
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/beach3.jpg")center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("images/beach2.jpg")center/cover no-repeat;
 }
+
 .btn-container{
     display: flex;
     justify-content: center;
     margin-top: 0.75rem;
+}
+.prevBtn, .nextBtn{
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--clr-grey-5);
+    transition: var(--transition);
+}
+.prevBtn:hover, .nextBtn{
+    color: var(--clr-grey-3);
 }
 @media screen and(min-width:756px) {
     .slider-container{
@@ -77,5 +93,5 @@
     left: 300%;
 }
 .slide{
-    transform: translateX(-300);
+    transform: translateX(-300%);
 }
