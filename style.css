@@ -34,6 +34,10 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.slide:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("images/beach3.jpg")center/cover no-repeat;
+}
 .slide:nth-child(3){
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
     url("images/beach2.jpg")center/cover no-repeat;
